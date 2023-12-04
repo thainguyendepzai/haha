@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px ;
+            
+        }
+
+      
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            
+        }
+
+        .phone {
+            width: 300px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            background-color: rgba(160, 135, 135, 0.929);
+        }
+
+        .phone:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #323030;
+            padding: 20px;
+            float: left;
+        }
+
+        .cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: brown;
+        }
+        
+    
+    </style>
+</head>
+<body style="background-image: url(https://kenh14cdn.com/203336854389633024/2022/5/15/iphone-14-pro-1652553744719865612107.jpeg);background-repeat: no-repeat;background-size:100%;";>
+    <header >
+        <h1 >Welcome to Phone Store</h1>
+    </header>
+    <nav style="margin-top: -30px;">
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="#account">Account</a>
+            <a style="color: #fff;">Delivery</a>
+<input Style="margin-right: -100px;";type="text" placeholder="Search...">
+            <button style="margin-right: -100px ;">Search</button>
+            <a Style="margin-right: -100px;";href="#English">English</a>
+            <a href="#Tiếng Việt">Tiếng Việt</a>
+            
+        </div>
+  
+    </nav>
+
+    
+    <div class="sidebar">
+        <div class="cart">
+            <h3 style="color: #ccc;">Shopping Cart</h3>
+
+        </div>
+        <div class="cont">
+       
+            <main>
+                <aside class="sideba-left">
+                    <div class="categorie">
+                        <h2>type</h2>
+                        <ul>
+                            <li ><a style="color: #444;";href="#">Phone</a></li>
+                            <li><a style="color: #444;";href="#">Laptop</a></li>
+                            <li><a style="color: #444;";href="#">Tablet</a></li>
+
+                        </ul>
+                    </div>
+                </aside>
+                <aside class="sideba-right">
+                    <div class="crt">
+                        <h2>Cart</h2>
+                       <img src="https://cdn.pixabay.com/photo/2012/04/12/11/45/shopping-29647_960_720.png" alt="Giohang" style="width: 20px;height: 20px;"> <p>Content of cart here...</p>
+                    </div>
+                    <div class="searc">
+                        <h2>Somethings which you need</h2>
+                        <input type="text" placeholder="Nhập từ khóa">
+                        <button>discover</button>
+                    </div>
+                </aside>
+              
+            </main>
+           
+        </div>
+       
+    </div>
+
+    <div class="container">
+        <div class="phone">
+            <h2>Phone Model 1</h2>
+            <img src="https://didongviet.vn/dchannel/wp-content/uploads/2023/09/5-hinh-anh-iphone-15-pro-max-didongviet.jpg" alt="Phone Model 1" style="width: 200px;height: 200px;">
+            <p>Price: $500</p>
+            <button onclick="addToCart('Phone Model 1', 500)"; style="color: goldenrod;">Add to Cart</button>
+        </div>
+        <div class="phone">
+            <h2>Phone Model 2</h2>
+            <img src="https://macone.vn/wp-content/uploads/2021/12/269902633_648553806568650_2291142193696422643_n-1024x1024.jpeg" alt="Phone Model 2" style="width: 200px;height: 200px;">
+            <p>Price: $600</p>
+            
+            <button onclick="addToCart('Phone Model 2', 600)"; style="color: brown;">Add to Cart</button>
+        </div>
+        <div class="phone">
+            <h2>Phone Model 3</h2>
+<img src="https://www.xtmobile.vn/vnt_upload/news/07_2023/27/Dung-bo-qua-nhung-hinh-nen-iphone-14-pro-max-sieu-dang-yeu-nay-xtmobile.jpg" alt="Phone Model 2" style="width: 225px;height: 200px;">
+            <p>Price: $700</p>
+            
+            <button onclick="addToCart('Phone Model 2', 600)"; style="color: brown;">Add to Cart</button>
+            </div>
+            
+            
+                    
+               </div>
+
+    </div>
+
+    <footer>
+        <p>Phone Store &copy; 2023</p>
+    </footer>
+
+    <script >
+        function addToCart(itemName, price) {
+            alert(`Added ${itemName} to cart. Total: $${price}`);
+        }
+    </script>
+</body>
+</html>
